@@ -1,5 +1,5 @@
 ---
-
+const siteTitle = "Zero Width Space Copier";
 ---
 
 <html lang="en">
@@ -8,7 +8,7 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Zero Width Space Copyer</title>
+		<title>{siteTitle}</title>
 		<script>
 			const onClickCopyButton = async () => {
 				const zeroWidthSpace = "\u200B";
@@ -35,6 +35,6 @@
 		</script>
 	</head>
 	<body>
-		<h1>Zero Width Space Copyer</h1>
+		<h1>{siteTitle}</h1>
 		<button id="copy-button">Copy</button>
 </html>
