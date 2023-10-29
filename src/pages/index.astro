@@ -1,6 +1,10 @@
 ---
 const siteTitle = "Zero Width Space Copier";
 const siteDescription = "Website only for copying zero width space to clipboard.";
+const twitterHandle = "@tec2soc";
+const githubHandle = "tecsoc";
+const repositoryName = "zero-width-space-copier";
+const siteUrl = `https://${githubHandle}.github.io/${repositoryName}`;
 ---
 
 <html lang="en">
@@ -11,6 +15,12 @@ const siteDescription = "Website only for copying zero width space to clipboard.
 		<meta name="generator" content={Astro.generator} />
 		<meta property="og:title" content={siteTitle} />
 		<meta property="og:description" content={siteDescription} />
+		<meta property="og:type" content="website" />
+		<mena property="og:url" content={siteUrl} />
+		<meta name="twitter:site" content={twitterHandle} />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content={siteTitle} />
+		<meta name="twitter:description" content={siteDescription} />
 
 		<title>{siteTitle}</title>
 		<script>
