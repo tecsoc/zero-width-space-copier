@@ -47,9 +47,46 @@ const siteUrl = `https://${githubHandle}.github.io/${repositoryName}`;
 			const copyButton = document.getElementById("copy-button");
 			copyButton?.addEventListener("click", onClickCopyButton);
 		</script>
+		<style>
+			body {
+				width: 100vw
+			}
+
+			main {
+				text-align: center;
+			}
+
+			#copy-button {
+				font-size: 1rem;
+				margin: 0 auto;
+				padding: 0.625rem 1.25rem;
+				border: none;
+				border-radius: 0.25rem;
+				background-color: #4ca7d8;
+				color: #fff;
+				cursor: pointer;
+				transition: background-color 0.3s ease, box-shadow 0.3s ease;
+				box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+
+				&:hover, &:focus {
+					background-color: #54b9f0;
+					box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+				}
+
+				&:active {
+					background-color: #4394c0;
+					box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+					transform: translateY(0.04em);
+				}
+			}
+
+
+		</style>
 	</head>
 	<body>
-		<h1>{siteTitle}</h1>
-		<button id="copy-button">Copy</button>
+		<main>
+			<h1>{siteTitle}</h1>
+			<button id="copy-button">Copy to Clipboard</button>
+		</main>
 	</body>	
 </html>
