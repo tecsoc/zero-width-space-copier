@@ -1,5 +1,6 @@
 ---
 const siteTitle = "Zero Width Space Copier";
+const siteDescription = "Website only for copying zero width space to clipboard.";
 ---
 
 <html lang="en">
@@ -8,6 +9,9 @@ const siteTitle = "Zero Width Space Copier";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<meta property="og:title" content={siteTitle} />
+		<meta property="og:description" content={siteDescription} />
+
 		<title>{siteTitle}</title>
 		<script>
 			const onClickCopyButton = async () => {
