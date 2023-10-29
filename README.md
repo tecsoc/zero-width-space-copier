@@ -1,3 +1,18 @@
+# Zero Width Space Copier
+
+## Setup
+```sh
+pnpm install
+```
+
+## Start　a server
+```sh
+pnpm dev
+```
+
+## How to use
+Click "Copy" button.
+
 # Astro Starter Kit: Minimal
 
 ```sh
