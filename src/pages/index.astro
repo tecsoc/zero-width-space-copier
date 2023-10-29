@@ -8,9 +8,33 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Zero Width Space Copyer</title>
+		<script>
+			const onClickCopyButton = async () => {
+				const zeroWidthSpace = "\u200B";
+				try {
+					if (navigator.clipboard) {
+						await navigator.clipboard.writeText(zeroWidthSpace);
+						alert("Copied to clipboard!");
+					} else {
+						const textArea = document.createElement("textarea");
+						textArea.value = zeroWidthSpace;
+						document.body.appendChild(textArea);
+						textArea.select();
+						document.execCommand("copy");
+						document.body.removeChild(textArea);
+					}
+				} catch (error) {
+					console.error(error);
+					alert("Failed to copy to clipboard!");
+				}
+			};
+
+			const copyButton = document.getElementById("copy-button");
+			copyButton?.addEventListener("click", onClickCopyButton);
+		</script>
 	</head>
 	<body>
-		<h1>Astro</h1>
-	</body>
+		<h1>Zero Width Space Copyer</h1>
+		<button id="copy-button">Copy</button>
 </html>
