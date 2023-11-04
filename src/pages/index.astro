@@ -70,13 +70,15 @@ const gTagId = "G-RGZZ7CNQ3S";
 		</script>
 		<style>
 			body {
-				width: 100vw;
-				height: 100vh;
-				height: 100lvh;
-				height: 100svh;
-				height: 100i
+				$bodyPadding: 1rem;
+				$twoBodyPadding: $bodyPadding * 2;
+
+				width: calc(100vw - #{$twoBodyPadding});
+				height: calc(100vh - #{$twoBodyPadding});
+				height: calc(100lvh - #{$twoBodyPadding});
+				height: calc(100vh - #{$twoBodyPadding});
 				word-break: keep-word;
-				padding: 1rem;
+				padding: $bodyPadding;
 
 				font-size: 13px;
 				@media (min-width: 768px) {
