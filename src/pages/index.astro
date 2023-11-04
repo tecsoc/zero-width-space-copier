@@ -5,7 +5,6 @@ const twitterHandle = "@tec2soc";
 const githubHandle = "tecsoc";
 const repositoryName = "zero-width-space-copier";
 const siteUrl = `https://${githubHandle}.github.io/${repositoryName}`;
-const gTagId = "G-RGZZ7CNQ3S";
 ---
 
 <html lang="en">
@@ -29,7 +28,7 @@ const gTagId = "G-RGZZ7CNQ3S";
 		<title>{siteTitle}</title>
 		<script
 			type="text/partytown"
-			src={`https://www.googletagmanager.com/gtag/js?${gTagId}`}>
+			src="https://www.googletagmanager.com/gtag/js?G-RGZZ7CNQ3S">
 		</script>
 		<script type="text/partytown">
 			window.dataLayer = window.dataLayer || [];
@@ -37,7 +36,7 @@ const gTagId = "G-RGZZ7CNQ3S";
 				dataLayer.push(arguments);
 			}
 			gtag("js", new Date());
-			gtag("config", gTagId);
+			gtag("config", "G-RGZZ7CNQ3S");
 		</script>
 		<script>
 			const onClickCopyButton = async () => {
