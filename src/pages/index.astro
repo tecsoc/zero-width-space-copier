@@ -5,6 +5,7 @@ const twitterHandle = "@tec2soc";
 const githubHandle = "tecsoc";
 const repositoryName = "zero-width-space-copier";
 const siteUrl = `https://${githubHandle}.github.io/${repositoryName}`;
+const gTagId = "G-RGZZ7CNQ3S";
 ---
 
 <html lang="en">
@@ -26,6 +27,18 @@ const siteUrl = `https://${githubHandle}.github.io/${repositoryName}`;
 		<link rel="manifest" href="manifest.json" />
 
 		<title>{siteTitle}</title>
+		<script
+			type="text/partytown"
+			src={`https://www.googletagmanager.com/gtag/js?${gTagId}`}>
+		</script>
+		<script type="text/partytown">
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", gTagId);
+		</script>
 		<script>
 			const onClickCopyButton = async () => {
 				const zeroWidthSpace = "\u200B";
