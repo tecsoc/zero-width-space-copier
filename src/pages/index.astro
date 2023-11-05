@@ -41,6 +41,7 @@ const siteUrl = `https://${githubHandle}.github.io/${repositoryName}/`;
 		</script>
 		<script>
 			const onClickCopyButton = async () => {
+				gtag('event', <action>, {'event_category': "zero-width-space-copy",  'event_label': "ゼロ幅スペースコピー",  'value': "clicked"})
 				const zeroWidthSpace = "\u200B";
 				try {
 					if (navigator.clipboard) {
