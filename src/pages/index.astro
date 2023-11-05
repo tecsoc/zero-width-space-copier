@@ -10,7 +10,8 @@ const siteUrl = `https://${githubHandle}.github.io/${repositoryName}`;
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="manifest" href="/manifest.json">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={siteDescription} />
@@ -23,7 +24,6 @@ const siteUrl = `https://${githubHandle}.github.io/${repositoryName}`;
 		<meta name="twitter:title" content={siteTitle} />
 		<meta name="twitter:description" content={siteDescription} />
 
-		<link rel="manifest" href="/manifest.json" />
 
 		<title>{siteTitle}</title>
 		<script
