@@ -8,6 +8,7 @@ export default defineConfig({
   integrations: [react(), partytown({
     config: {
       forward: ['dataLayer.push'],
+      lib: "/zero-width-space-copier/~partytown/"
     },
   })]
 });
