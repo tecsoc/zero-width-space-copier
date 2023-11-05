@@ -23,7 +23,7 @@ const siteUrl = `https://${githubHandle}.github.io/${repositoryName}`;
 		<meta name="twitter:title" content={siteTitle} />
 		<meta name="twitter:description" content={siteDescription} />
 
-		<link rel="manifest" href="manifest.json" />
+		<link rel="manifest" href="/manifest.json" />
 
 		<title>{siteTitle}</title>
 		<script
@@ -62,10 +62,11 @@ const siteUrl = `https://${githubHandle}.github.io/${repositoryName}`;
 			const copyButton = document.getElementById("copy-button");
 			copyButton?.addEventListener("click", onClickCopyButton);
 
-			if ('serviceWorker' in navigator) {
-				navigator.serviceWorker.register('sw.js')
-					.then((reg) => { console.log('SW registered.', reg); });
-			}
+			window.addEventListener("load", () => {
+				if ("serviceWorker" in navigator) {
+					navigator.serviceWorker.register("/sw.js");
+				}
+			});
 		</script>
 		<style>
 			body {
