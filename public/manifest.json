@@ -1,6 +1,8 @@
 {
   "name": "Zero Width Space Copier",
   "short_name": "Hidden Space Copier",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
   "icons": [
     {
       "src": "favicon.svg",
@@ -9,6 +11,7 @@
     }
   ],
   "display": "fullscreen",
+  "orientation": "any",
   "start_url": "./",
   "prefer_related_applications": false
 }
