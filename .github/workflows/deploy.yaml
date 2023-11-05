@@ -14,8 +14,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      dev_branch: staging
     steps:
       - uses: actions/checkout@v3
         with:
@@ -41,8 +39,8 @@ jobs:
             ${{ runner.os }}-pnpm-store-
       - name: pnpm install
         run: pnpm install --frozen-lockfile --prefer-offline
-      - name: pnpm check
-        run: pnpm check
+      - name: process before build
+        run: pnpm prebuild
       - name: pnpm build
         run: pnpm build
       - name: Upload artifact

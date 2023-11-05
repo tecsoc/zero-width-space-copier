@@ -6,7 +6,9 @@
     "dev": "astro dev",
     "start": "astro dev",
     "check": "astro check",
-    "build": "pnpm check && astro build",
+    "partytown": "partytown copylib public/~partytown",
+    "prebuild":"pnpm check && pnpm partytown",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -23,5 +25,8 @@
   },
   "volta": {
     "node": "20.9.0"
+  },
+  "devDependencies": {
+    "@builder.io/partytown": "^0.8.1"
   }
 }

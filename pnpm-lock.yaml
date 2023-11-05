@@ -33,6 +33,11 @@ dependencies:
     specifier: ^5.2.2
     version: 5.2.2
 
+devDependencies:
+  '@builder.io/partytown':
+    specifier: ^0.8.1
+    version: 0.8.1
+
 packages:
 
   /@ampproject/remapping@2.2.1:
@@ -430,7 +435,6 @@ packages:
     resolution: {integrity: sha512-p4xhEtQCPe8YFJ8e7KT9RptnT+f4lvtbmXymbp1t0bLp+USkNMTxrRMNc3Dlr2w2fpxyX7uA0CyAeU3ju84O4A==}
     engines: {node: '>=18.0.0'}
     hasBin: true
-    dev: false
 
   /@emmetio/abbreviation@2.3.3:
     resolution: {integrity: sha512-mgv58UrU3rh4YgbE/TzgLQwJ3pFsHHhCLqY20aJq+9comytTXUDNGG/SMtSeMJdkpxgXSXunBGLD8Boka3JyVA==}
