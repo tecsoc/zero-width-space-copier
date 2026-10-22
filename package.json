@@ -2,6 +2,7 @@
   "name": "zero-width-space-copy",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@8.15.9",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -24,7 +25,7 @@
     "typescript": "^5.2.2"
   },
   "volta": {
-    "node": "20.9.0"
+    "node": "24.22.1"
   },
   "devDependencies": {
     "@builder.io/partytown": "^0.8.1"
