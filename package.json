@@ -25,7 +25,7 @@
     "typescript": "^5.2.2"
   },
   "volta": {
-    "node": "24.22.1"
+    "node": "24.22.3"
   },
   "devDependencies": {
     "@builder.io/partytown": "^0.8.1"
